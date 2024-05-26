@@ -9,4 +9,3 @@ output "vpc_id"{
 output "database_subnet_group_id"{
   value = module.vpc.database_subnet_group_id
 }
-

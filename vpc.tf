@@ -89,6 +89,9 @@ resource "aws_db_subnet_group" "default" {
 
 resource "aws_eip" "nat" {
   domain   = "vpc"
+  tags = {
+    Name = "eip"
+  }
 }
 
 resource "aws_nat_gateway" "nat" {
